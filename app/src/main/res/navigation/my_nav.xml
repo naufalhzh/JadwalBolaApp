@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/homeFragment">
+    
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="org.d3if4003.jadwalbolaapp.ui.home.HomeFragment"
+        android:label="Jadwal"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_matchDetailFragment"
+            app:destination="@id/matchDetailFragment"/>
+        <action
+            android:id="@+id/action_homeFragment_to_settingFragment"
+            app:destination="@id/settingFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="org.d3if4003.jadwalbolaapp.ui.favorite.FavoriteFragment"
+        android:label="Favorite"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_matchDetailFragment"
+            app:destination="@id/matchDetailFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/matchDetailFragment"
+        android:name="org.d3if4003.jadwalbolaapp.ui.matchdetail.MatchDetailFragment"
+        android:label="Match Detail"
+        tools:layout="@layout/fragment_match_detail" >
+        <argument
+            android:name="favorite"
+            app:argType="org.d3if4003.jadwalbolaapp.model.Favorite" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="org.d3if4003.jadwalbolaapp.ui.setting.SettingFragment"
+        android:label="Setting"
+        tools:layout="@layout/fragment_setting" />
+</navigation>
