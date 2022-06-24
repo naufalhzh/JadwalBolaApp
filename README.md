@@ -1,0 +1,2 @@
+# MUHAMMAD NAUFAL HAFIZH (6706204003) D3IF-4403
+Aplikasi ini dibuat untuk melihat jadwal pertandingan sepak bola. Di aplikasi ini kita dapat menambahkan dan mengapus pertandingan ke favorite. Aplikasi ini juga memiliki fitur seperti: membuat notifikasi reminder untuk pertandingan yang kita pilih, menambahkan dan mengapus pertandingan ke favorite, mengaktifkan mode gelap/dark mode, dan juga untuk membagikan pertandingan ke aplikasi lain.
